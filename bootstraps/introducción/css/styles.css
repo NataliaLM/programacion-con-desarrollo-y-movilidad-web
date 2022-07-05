@@ -1,0 +1,6 @@
+body{
+    /* background: url(https://picsum.photos/2100/1000?random=1); */
+    /* background: url(https://picsum.photos/2100/1000) no-repeat; */
+    /* opacity:0.5; */
+    background: url(https://picsum.photos/2100/1000?blur) no-repeat;
+}
