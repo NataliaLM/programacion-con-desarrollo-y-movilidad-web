@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <h3>Departamento de calidad: Necesitamos una aplicación donde
+        podamos localizar a través del código de los faros, trazabilidad,
+        aquellos que se han detectado Como defectuosos, otros Como Mal
+        Funcionamiento y otros para su revisión de calidad.
+        Hemos detectado lo siguiente, a través de código de trazabilidad:
+    </h3> <br>
+    <ul>
+        <li>Todos los códigos IMPARES No funcionan bien, tienen algún
+            Fallo (Departamento de calidad)
+        </li>
+        <li>Todos los códigos PARES el Defecto supera el 72% de
+            Fallo (Defectuoso)
+        </li>
+        <li>Cada caja consta de 15 faros, cada 3 elementos No
+            funcionaba Ninguno. MÚLTIPLO DE 3 (Desguace-Desperdicio)
+        </li>
+    </ul>
+    <h4>Ruego podamos identificar la naturaleza los faros,
+        introduciendo el código del faro.
+    </h4>
+    <script>
+        /* var identificador=parseInt(window.prompt("Introduce el identificador del faro"));
+        if((identificador % 2 ==  0)&&(identificador % 3 == 0)){
+            swal("Defectuoso y No funciona: Enviar a Desguace");
+        /* }else if((impar)&&(multiplo3)){ */
+        /* }else if(!(identificador % 2 == 0)&&(identificador % 3 == 0)){
+            swal("Revisión de Fallo, mandar al departamento de calidad y además No funciona");
+        } else if(!(identificador % 3 == 0)&&(identificador % 2 ==  0)){
+            swal("Faro defectuoso");
+        } else {
+            swal("Impar y No múltiplo de 3 = Enviar al departamento de calidad-No funciona bien. " );
+        } */
+        var numero = parseInt(window.prompt("Introduce un número: "));
+        if (numero % 2 == 0) {
+            swal("el número: " + numero + " es par. ");
+        } else {
+            swal("El número: " + numero + " es impar. ");
+        }
+    </script>
+
+</body>
+
+</html>

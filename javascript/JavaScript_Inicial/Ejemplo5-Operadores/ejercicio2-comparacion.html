@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos, relacionales y aritmeticos</title>
+</head>
+<body>
+    <!-- 
+        1. Operadores lógicos 
+
+        Operación           Símbolo         Descripción
+
+        Y                   &&              Considera true (verdadera)
+                                            si ambas sentencias lo son.
+        O                   ||              Considera true (verdadera)
+                                            si alguna sentencia es verdadera.
+        No                  !               Devuelve su valor cotrario
+        
+        2. Operadores relcionales
+        Operación           Símbolo         Descripción
+        igual a             ==              Igualdad entre elementos
+                                            comparados
+        distinto de         !=              Contrario al elemento comparado
+        mayor, mayor e      >,>=            Comparación de cantidad, mayor o
+        igual                               mayor que
+        menor, menor e      <, <=           Comparación de cantidad, menor o
+        igual                               menor que
+        igualdad estricta   ===             Igualdad de toda la naturaleza o
+                                            aspectos de la variable
+        Distinto de la      !==             Contrario al elemento comparado
+        estricta                            de man
+
+        3. Operadores aritméticos
+        Operación       Símbolo             Descripción
+        Suma y resta    +, -                
+        Multiplicación  *, /
+        y división
+        Cambio de       -                   
+        signo
+        Incremento      ++
+        Decremento      --
+        División        / 
+        entero
+        Resto de        %
+        división
+    
+    -->
+    <script>
+        var numero = 7;
+        console.log("Igualdad: " + (numero==7));
+        console.log("Desigualdad: " + (numero!=7));
+        console.log("Mayor: " + (numero>7));
+        console.log("Mayor o igual: " + (numero >= 7));
+        console.log("Menor: " + (numero<7));
+        console.log("Menor o igual: " + (numero<=7));
+        //Igualdad estricta
+        console.log("Igualdad: " + (numero=="7"));
+        console.log("Igualdad estricta: " + (numero==="7"));
+        /*
+
+        */
+        console.log("Desigualdad:  " + (numero!="7"));
+        console.log("Desigualdad estricta:  " + (numero!=="7"));
+        //Operadores lógicos
+        var nombre1="Juan";
+        var nombre2="Pepa";
+        console.log("Y: " + ( (nombre1=="Juan")&&(nombre2=="Pepaa") ) );
+        console.log("O: " + ( (nombre1=="Juan")||(nombre2=="Pepaa") ));
+        console.log("No: " + (!(nombre2=="Pepaa")) );
+        console.log("No: " + (!(nombre1=="Juan")) );
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condidiones</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <!-- 
+        =====
+        Estructuras de control
+        =====
+        Dichas estructuras nos permiten Tomar decisiones en función de
+        unas determinadas condiciones que inicialmente se hayan impuesto, 
+        para ejecutar uno u otro código según lo indiquen dichas
+        condiciones.
+        1. if else
+        2. switch case
+        3. for
+        4. for in - for of
+        5. while
+        6. do-while
+
+        1. If else ↓
+            Sintaxis:
+            if(condicion=true){
+                [sentencia1, ejecuta mientras la condición sea true];
+            }else{
+                [setencia2, ejecuta mientras las condiciones anteriores
+                sean False]
+            }
+            [Definición: Comprueba la validez o falsedad de una condición,
+            establecida. Si dicha condición es true se ejecuta el primer
+            código y si Fuera False, habría una interrupción y se
+            interpretará el código de la segunda sentencia, o aquella que
+            sea true. ]
+
+     -->
+        <script>
+            var numero = 4;
+            if(numero>=5){
+                swal("Número es mayor o igual que 5 ");
+            } else {
+                swal("Número es menor a 5 ");
+            }
+            //Añadir otra sentencia if, anidación simple
+            var numero2=1;
+            if(numero>=5){
+                swal("Número es mayor que 5. ");
+            } else if (numero2>=5) {
+                swal("Número 2 es menor a 5. ");
+            } else{
+                swal("Ambos números son menores que 5. ");
+            }
+        </script>
+</body>
+</html>
