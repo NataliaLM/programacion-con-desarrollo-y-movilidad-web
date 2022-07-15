@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadorse de asignación</title>
+</head>
+
+<body>
+    <!-- 
+        =====
+        Operadores de asignación simple y compuesta
+        =====
+        Operación-Acción        Operador
+
+        Asignación directa      =
+        Adición                 +=
+        Sustracción             -=
+        Multiplicación          *=
+        División                /=´
+        Módulo                  %= [    ↓   ]
+                                    dividendo/divisor
+                                    resto
+        El resto de una división es el número que nos queda Como resultado de
+        una división finalizada, entendemos Como exacto = 0, o sería exacta !=0
+     -->
+    <script>
+        var numero = 5;
+        //Asignación compuesta
+        numero = numero + 3;
+        numero += 3;
+        console.log(numero);
+        numero = numero * 6;
+        numero *= 6;
+        console.log(numero);
+        numero = numero / 9;
+        numero /= 9;
+        console.log(numero);
+        numero = numero - 2;
+        numero -= 2;
+        console.log(numero);
+        /* Porqué sale 0.88 */
+    </script>
+</body>
+
+</html>

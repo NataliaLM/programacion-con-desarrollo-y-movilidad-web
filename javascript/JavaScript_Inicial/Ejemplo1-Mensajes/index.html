@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Presentación</title>
+    <!-- 
+        Inyecto con el script a la dirección a la que apunta
+     -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- 
+        -----
+            JavaScript
+        -----
+        Lenguaje de programación para añadir interactividad
+        No genera ningún tipo de código compilado
+        Fundamentos:
+        1. Interpretado y orientado a objetos
+        2. Débilmente tipado
+        3. Utilizaba en un principio y aún con base a sus principios una
+        especificación de ECMADCRIPT
+        4. Sintaxis similar a C y convenciones similares a Java
+        5. Uso principal es en lado Cliente (browser), aunque empiezan
+        a surgir opciones hacia el servidor
+        6. Debilidad en las grafías (mayúsculas, minúsculas)
+        7. Sintaxis
+            i. Link: <script src=""></script>
+            ii. Etiqueta en html <script> Parcheado </script> Ojo con la posición del script
+
+     -->
+    <script>
+        /* alert("Bienvenidos a mi primer Script");
+        alert("Hola de nuevo") */
+            /*
+            console.log()
+            Será otro método que nos ayuda a mostrar un mensaje de contenido,
+            será mostrado en la consola del cliente. Donde se recibe como
+            argumento uno o más objetos.
+            CADA OBJETO SE EVALÚA Y CONCATENA EN UN STRING SEPARADO POR ESPACIOS
+        */
+       console.log(3+5+" Hola");
+       /*
+        Otro método de efecto directo sobre html, será
+        el document.write();
+       */
+      document.write("<h1>Hola desde mi página JS</h1>");
+      /*
+        SweetAlert (https://sweetalert.js.org/guides)
+        Framework de estilo para Alert
+        Configuración desde CMD (consola Windows), lo siguiente:
+        1. Instalarme librerías que me ayuden a resolver los estilos
+            nuevos que quiero instalar
+        2. Inyectar las librerías con un script
+        [Recursos necesarios para implantar librería de js]
+      */
+     /*
+        cmd
+        cd .. = carpeta padre
+        node -v = versión
+        cls = limpiar
+        cd (tabulador) = autorellena las subcarpetas que hay
+     */
+    /*
+        $npm install sweetalert --save
+    */
+    /* sweet alert */
+    swal({
+        title:"Bienvenido a mi primer Script decente",
+        text:"Presiona para salir",
+        icon:"success",
+        button:"Gracias, qué ilusión"
+    });
+    </script>
+</body>
+
+</html>
