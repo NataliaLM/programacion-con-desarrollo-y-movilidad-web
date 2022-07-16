@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 
+        número primo es el número natural mayor que 1, y que tiene únicamente
+        dos divisores (positivos) distintos, serán el mismo y el 1
+
+     -->
+    <script>
+        for (let numero = 1; numero < 100; numero++) {
+            document.write("Probando número: " + numero + " -----" + "<br>");
+            var esPrimo = true;
+            //Recorrido de los posibles divisores
+            for (let divisor = 2; divisor < numero; divisor++) {
+                if (numero % divisor == 0) {
+                    esPrimo = false;
+                }
+                //rompe y continúa
+            }
+            //Terminamos de repasar los divisores
+            if (esPrimo) {
+                document.write("El número: " + numero + " es primo. <br>");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

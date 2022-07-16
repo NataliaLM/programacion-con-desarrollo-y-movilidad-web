@@ -1,0 +1,19 @@
+.post-it{
+    width: 15.62rem;
+    height: 15rem;
+    position: relative;
+    background-color: #ffa;
+    margin: 30px auto;
+    padding: 50px;
+    border-radius: 0 0 0 30px/45px;
+    box-shadow: inset 0 -40px 40px rgb(0, 0, 0, 0.2);
+
+}
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+.pantalla{
+    background-color: black;
+    color: #ADFF2F;
+    font-family: 'Nova Mono', monospace;
+    border-right: gainsboro solid 18px;
+    border-top-width: 40px;
+}
