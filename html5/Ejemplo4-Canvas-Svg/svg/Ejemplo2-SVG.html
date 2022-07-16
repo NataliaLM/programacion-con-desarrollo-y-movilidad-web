@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dibujos vectoriales</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+    <script src=""></script>
+  </head>
+  <body>
+    <!-- <svg> Esta etiqueta contenedore, nos aporta html5, un nuevo sistema
+         de coordenadas y viewport. Es usado principalmente Como un elemento
+        más externo de cualquier documento, donde encontramos posibilidades
+        de agregar un gragmento dentro del mismo documento (html o svg) -->
+    <style>
+      svg {
+        width: 400px;
+        height: 500px;
+      }
+    </style>
+    <!-- 
+        fill() Rellena de forma sólida
+        stroke() Genera la línea del borde
+     -->
+    <svg>
+      <circle r="60" cx="150" cy="100" style="fill: bisque"></circle>
+      <!-- fill() Rellena de forma solida-->
+      <ellipse
+        cx="150"
+        cy="250"
+        rx="120"
+        ry="70"
+        style="fill: darkseagreen; stroke: cornflowerblue"
+      ></ellipse>
+      <rect
+        x="300"
+        y="350"
+        width="100"
+        height="80"
+        style="fill: aliceblue; stroke: coral"
+        stroke-width="4px"
+      ></rect>
+    </svg>
+    <svg>
+      <polygon
+        points="175 40,270 100,233 215,117 210,80 108"
+        stroke-width="4px"
+      ></polygon>
+
+      <!-- <polygon x1="100" x2="90" y1="150" y2="50" stroke="coral"></polygon> -->
+    </svg>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ajax</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- 
+        =====
+        Ajax
+        =====
+        Asynchronous Javascript and XML, son el conjunto de tecnologías, que nos
+        van a premitir hacer 'llamadas' a servidores partiendo de JavaScript en el
+        entorno cliente (navegador), Sin tener la necesidad de Parar el motor o
+        ciclo de vida de una página, refrescar la página o la petición. Permite
+        que las aplicaciones web, y móvil, funcionen de forma asíncrona, pero
+        cualquier solicitud al servidor en segundo plano
+
+     -->
+    <div class="container">
+        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Búsqueda de Pokemon</div>
+            <div class="card-body">
+                <h5 class="card-title">Encuentra las características principales
+                    de tu Pokemon
+                </h5>
+                <p class="card-text">Aparecerá nombre, sus cualidades altura y
+                    peso, así Como sus habilidades o poderes principales.
+                </p>
+            </div>
+            <label>Introduce el nombre del Pokemon </label>
+                <input type="text">
+                <button class="btn btn-warning" onblur="">Buscar</button>
+            
+        </div>
+</body>
+
+</html>
