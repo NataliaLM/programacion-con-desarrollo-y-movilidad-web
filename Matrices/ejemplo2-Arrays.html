@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="" />
+    <script src=""></script>
+  </head>
+  <body>
+    <script>
+      var valores = [true, 5, "hola", 2, false, "adiós"]; // Servidor
+      var arrayTexto = new Array();
+      var arrayNumero = new Array();
+      var arrayBoolean = new Array();
+      //6. Método push, agregador de elementos o inyector de un elemento al
+      //final
+      for (var item of valores) {
+        if (typeof item == "string") {
+          arrayTexto.push(item);
+        } else if (typeof item == "boolean") {
+          arrayBoolean.push(item);
+        } else if (typeof item == "number") {
+          arrayNumero.push(item);
+        }
+      }
+      console.log(arrayTexto);
+      console.log(arrayBoolean);
+      console.log(arrayNumero);
+      //Diversidad en el acceso a los elementos de un Array
+      //1. Tamaños entre elementos
+      if (arrayTexto[0].length > arrayTexto[1].length) {
+        document.write("El texto mayor será: " + arrayTexto[0] + "<br>");
+      } else {
+        document.write("El texto mayor será: " + arrayTexto[1] + "<br>");
+      }
+      //2. Itinerancia en Boolean
+      var resultadoTrue = true;
+      var resultadoFalse = false;
+
+      for (var item of arrayBoolean) {
+        if (resultadoTrue == resultadoTrue || item) {
+          document.write("Resultado verdadero: " + resultadoTrue + "<br>");
+        } else if (resultadoFalse == resultadoFalse && item) {
+          document.write("Resultado Falso: " + resultadoFalse + "<br>");
+        }
+      }
+      //3. Operación de álgebra en matrices
+      var suma = 0;
+      var multiplicacion = 0;
+      for (var item of arrayNumero) {
+        suma += item;
+        multiplicacion = suma * 25;
+      }
+
+      document.write("Valores de suma entre los elementos: " + suma + "<br>");
+      document.write(
+        "Inventario de valor de los elementos 25€/unidad: " +
+          multiplicacion +
+          "<br>"
+      );
+      document.write(
+        "Resta de elementos: " + (arrayNumero[0] - arrayNumero[1]) + "<br>"
+      );
+      document.write(
+        "División de elementos: " + (arrayNumero[0] / arrayNumero[1] + "<br>")
+      );
+      document.write(
+        "División al resto: " + ((arrayNumero[0] % arrayNumero[1]) + +"<br>")
+      );
+
+      /* Ejercicio:
+        a. Dado el array adherido a memoria, sacar por console el primer elemento,
+            nº de elementos y el último. */
+      var frutas = ["Manzanas", "Plátano", "Sandía", "Naranja"];
+      console.log("Primer elemento " + frutas[0]); //Primer elemento
+      console.log("Número de elementos " + frutas.length); //Número de elementos
+      console.log("Último elemento " + frutas[frutas.length - 1]); //Último elemento
+      /* 4. Acción dinámica de los array
+        i) Añadir un elemento al Array */
+      var nuevaLongitud = frutas.push('Melocotón');
+      console.log(frutas);
+      //ii) Eliminar un elemento
+      var ultimo = frutas.pop();
+      console.log(frutas);
+      //iii) Añadir al inicio del Array
+      var inicioArray = frutas.unshift('fresas');
+      console.log(frutas);
+      
+      //iv) Encontrar el índice de un elemento
+      var hallarIndice = frutas.indexOf('Plátano');
+      console.log(frutas);
+    </script>
+  </body>
+</html>
